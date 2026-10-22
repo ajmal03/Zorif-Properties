@@ -1,0 +1,216 @@
+/* Custom CSS for Zorif Properties Ltd */
+:root {
+  --navy-dark: #071324;
+  --navy-deep: #0b1c36;
+  --navy-card: #102649;
+  --navy-light: #183768;
+  --primary-accent: #2563eb;
+  --primary-light: #60a5fa;
+  --light-gray: #cbd5e1;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--navy-dark);
+  color: #f8fafc;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, .brand-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.brand-zorif {
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.brand-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #e2e8f0;
+}
+
+.top-bar {
+  background-color: #040b15;
+  font-size: 0.85rem;
+}
+
+.hover-light:hover {
+  color: var(--primary-light) !important;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(7, 19, 36, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  color: #cbd5e1 !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #ffffff !important;
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+}
+
+/* Hero Section */
+.hero-section {
+  background: radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.18), transparent 50%),
+              radial-gradient(circle at 20% 70%, rgba(16, 38, 73, 0.5), transparent 50%),
+              var(--navy-dark);
+  padding: 4.5rem 0 3.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #60a5fa 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-light-gray {
+  color: var(--light-gray);
+}
+
+.text-primary-light {
+  color: var(--primary-light) !important;
+}
+
+.bg-navy-dark {
+  background-color: var(--navy-dark);
+}
+
+.bg-navy-deep {
+  background-color: var(--navy-deep);
+}
+
+.bg-navy-card {
+  background-color: var(--navy-card);
+}
+
+.bg-navy-light {
+  background-color: var(--navy-light);
+}
+
+.bg-navy-black {
+  background-color: #040a12;
+}
+
+/* Feature & Investor Cards */
+.feature-card, .investor-step, .contact-info-card {
+  background-color: var(--navy-card);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.feature-card:hover, .investor-step:hover, .contact-info-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(96, 165, 250, 0.4) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.icon-bubble {
+  width: 52px;
+  height: 52px;
+  background: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  color: var(--primary-light);
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.step-num {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* Concept Images */
+.concept-img-wrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.concept-img-wrapper img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.concept-card:hover img {
+  transform: scale(1.05);
+}
+
+.concept-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(7, 19, 36, 0.85);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Form Styles */
+.form-control, .form-select {
+  background-color: #0b1a30;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: #0e203c;
+  color: #ffffff;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 0.25rem rgba(96, 165, 250, 0.2);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form-select option {
+  background-color: var(--navy-deep);
+  color: #ffffff;
+}
+
+/* Nav Pills inside Form Box */
+#enquiryTabs .nav-link {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--light-gray) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+#enquiryTabs .nav-link.active {
+  background-color: var(--primary-accent);
+  color: #ffffff !important;
+  border-color: var(--primary-accent);
+}
+
+.btn-primary {
+  background-color: var(--primary-accent);
+  border-color: var(--primary-accent);
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
