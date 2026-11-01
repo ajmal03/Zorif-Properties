@@ -33,7 +33,7 @@ a { color: var(--forest); }
 .top-bar .sep { width: 1px; height: 12px; background: rgba(245, 242, 233, 0.3); display: inline-block; }
 
 /* Navigation with the carousel lockup */
-.site-nav { background: rgba(245, 242, 233, 0.97); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); padding: 16px 0; }
+.site-nav { background: rgba(245, 242, 233, 0.84); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(18, 60, 50, 0.12); padding: 16px 0; }
 .brand-lockup { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
 .brand-symbol { display: block; flex-shrink: 0; }
 .brand-text { display: flex; flex-direction: column; line-height: 1; font-family: var(--serif); }
